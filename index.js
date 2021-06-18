@@ -24,7 +24,7 @@ const sortedKeys = Object.keys(x).sort()
 
 const main = (arr) => {
 	const result = {}
-	
+
 	for (let i = 0; i < arr.length; i++) {
 		const word = arr[i]
 		const index = indexWord(word)
@@ -40,17 +40,7 @@ const main = (arr) => {
 	return arrOfValues
 }
 
-const input = [
-	'ayam',
-	'maya',
-	'maya',
-	'telur',
-	'relut',
-	'keluarga',
-	'aku',
-	'diam',
-	'garaleuk',
-]
+const input = ['kita', 'atik', 'tika', 'aku', 'kia', 'makan', 'kua']
 
 const answer = main(input)
 
