@@ -1,19 +1,19 @@
 const indexWord = (word) => {
 
-// count occurence each character
-const x = {}
+	// count occurence each character
+	const x = {}
 
-for (let i = 0; i < word.length; i++) {
-	const c = word[i]
-	if (x[c]) {
-		x[c]++
-	} else {
-		x[c] = 1
+	for (let i = 0; i < word.length; i++) {
+		const c = word[i]
+		if (x[c]) {
+			x[c]++
+		} else {
+			x[c] = 1
+		}
 	}
-}
 
-// build index
-const sortedKeys = Object.keys(x).sort()
+	// build index
+	const sortedKeys = Object.keys(x).sort()
 	let result = ''
 	for (let i = 0; i < sortedKeys.length; i++) {
 		result += `${sortedKeys[i]}${x[sortedKeys[i]]}`
